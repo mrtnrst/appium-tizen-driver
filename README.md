@@ -8,6 +8,7 @@
 Appium Tizen Driver is a test automation tool for Tizen devices. Appium Tizen Driver automates .NET applications, tested on emulators and real devices. Appium Tizen Driver is part of the [Appium](https://github.com/appium/appium) mobile test automation tool.
 
 ## Usage
+
 Import Tizen Driver, set and create a session:
 
 ```
@@ -24,6 +25,7 @@ await driver.createSession(defaultCaps);
 ```
 
 ## Commands
+
 - `getAttribute`
 - `setAttribute`
 - `click`

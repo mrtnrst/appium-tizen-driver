@@ -1,7 +1,7 @@
-import TizenDriver from "..";
+import TizenDriver from '..';
 
-describe("TizenDriver", function () {
-  it("should be instantiable", function () {
+describe('TizenDriver', function () {
+  it('should be instantiable', function () {
     new TizenDriver();
   });
 });

@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 // transpile:main
 
-import yargs from "yargs";
-import { asyncify } from "asyncbox";
-import * as server from "./lib/server";
-import * as driver from "./lib/driver";
-import * as helpers from "./lib/tizen-helpers";
-import * as commands from "./lib/commands/index";
-import * as caps from "./lib/desired-caps";
+import yargs from 'yargs';
+import { asyncify } from 'asyncbox';
+import * as server from './lib/server';
+import * as driver from './lib/driver';
+import * as helpers from './lib/tizen-helpers';
+import * as commands from './lib/commands/index';
+import * as caps from './lib/desired-caps';
 
 const { startServer } = server;
 const { TizenDriver } = driver;
@@ -15,7 +15,7 @@ const { helpers: tizenHelpers } = helpers;
 const { commands: tizenCommands } = commands;
 const { commonCapConstraints } = caps;
 
-const DEFAULT_HOST = "localhost";
+const DEFAULT_HOST = 'localhost';
 const DEFAULT_PORT = 4723;
 
 async function main() {

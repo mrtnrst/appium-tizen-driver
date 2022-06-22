@@ -1,0 +1,30 @@
+name: Unit Tests
+
+on:
+  pull_request:
+
+concurrency:
+  group: ${{ github.head_ref }}-test
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: XCTest
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: actions/cache@v2
+        with:
+          path: |
+            ./build
+          key: ${{ runner.os }}-build-${{ hashFiles('**/package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-
+
+      - name: Setup Bundler and Packages
+        run: yarn
+
+      - name: Test
+        run: yarn test

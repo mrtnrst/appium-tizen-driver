@@ -14,14 +14,14 @@
     "license": "Apache-2.0",
     "repository": {
         "type": "git",
-        "url": "https://github.com/Samsung/appium-tizen-driver.git"
+        "url": "https://github.com/mrtnrst/appium-tizen-driver.git"
     },
     "bugs": {
-        "url": "https://github.com/Samsung/appium-tizen-driver/issues"
+        "url": "https://github.com/mrtnrst/appium-tizen-driver/issues"
     },
-    "engines": [
-        "node"
-    ],
+    "engines": {
+        "node": ">=14"
+    },
     "main": "./build/index.js",
     "bin": {},
     "directories": {

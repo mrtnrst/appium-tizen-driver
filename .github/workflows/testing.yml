@@ -11,7 +11,7 @@ concurrency:
 
 jobs:
   test:
-    name: Test
+    name: Tests
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -29,5 +29,5 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-build-
 
-      - name: Test
+      - name: Tests
         run: yarn test

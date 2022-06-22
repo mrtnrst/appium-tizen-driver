@@ -2,8 +2,6 @@
 
 [![NPM version](http://img.shields.io/npm/v/appium-tizen-driver.svg)](https://npmjs.org/package/appium-tizen-driver)
 [![Downloads](http://img.shields.io/npm/dm/appium-tizen-driver.svg)](https://npmjs.org/package/appium-tizen-driver)
-[![Dependency Status](https://david-dm.org/Samsung/appium-tizen-driver.svg)](https://david-dm.org/Samsung/appium-tizen-driver)
-[![devDependency Status](https://david-dm.org/Samsung/appium-tizen-driver/dev-status.svg)](https://david-dm.org/Samsung/appium-tizen-driver#info=devDependencies)
 
 [![Build Status](https://api.travis-ci.org/Samsung/appium-tizen-driver.png?branch=master)](https://travis-ci.org/Samsung/appium-tizen-driver)
 

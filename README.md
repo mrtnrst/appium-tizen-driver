@@ -3,7 +3,7 @@
 [![NPM version](http://img.shields.io/npm/v/appium-tizen-driver.svg)](https://npmjs.org/package/appium-tizen-driver)
 [![Downloads](http://img.shields.io/npm/dm/appium-tizen-driver.svg)](https://npmjs.org/package/appium-tizen-driver)
 
-[![Build Status](https://api.travis-ci.org/Samsung/appium-tizen-driver.png?branch=master)](https://travis-ci.org/Samsung/appium-tizen-driver)
+![Build Status](https://github.com/mrtnrst/appium-tizen-driver/actions/workflows/testing.yml/badge.svg?branch=main)
 
 Appium Tizen Driver is a test automation tool for Tizen devices. Appium Tizen Driver automates .NET applications, tested on emulators and real devices. Appium Tizen Driver is part of the [Appium](https://github.com/appium/appium) mobile test automation tool.
 

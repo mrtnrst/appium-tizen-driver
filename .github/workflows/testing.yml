@@ -1,0 +1,33 @@
+name: Unit Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ${{ github.head_ref }}-test
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Setup Packages
+        run: yarn
+
+      - uses: actions/cache@v2
+        with:
+          path: |
+            ./build
+          key: ${{ runner.os }}-build-${{ hashFiles('**/package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-
+
+      - name: Tests
+        run: yarn test

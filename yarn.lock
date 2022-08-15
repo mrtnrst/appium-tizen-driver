@@ -7961,10 +7961,22 @@ tar-stream@^2.1.4, tar-stream@^2.2.0:
     inherits "^2.0.3"
     readable-stream "^3.1.1"
 
-teen_process@^1.3.1, teen_process@^1.5.1, teen_process@^1.9.0:
+teen_process@^1.3.1, teen_process@^1.5.1:
   version "1.16.0"
   resolved "https://registry.yarnpkg.com/teen_process/-/teen_process-1.16.0.tgz#2bad3e33b4d0a3a271cdd0c836434befa7771b44"
   integrity sha512-RnW7HHZD1XuhSTzD3djYOdIl1adE3oNEprE3HOFFxWs5m4FZsqYRhKJ4mDU2udtNGMLUS7jV7l8vVRLWAvmPDw==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    bluebird "^3.5.1"
+    lodash "^4.17.4"
+    shell-quote "^1.4.3"
+    source-map-support "^0.5.3"
+    which "^2.0.2"
+
+teen_process@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/teen_process/-/teen_process-2.0.0.tgz#68ccbf64f96d5f82eec7eef57a04af5a97c43852"
+  integrity sha512-OKYVh7DL62oBR4xIbMs8KPjWbjIcIyGiMn5z1XP4ucmNgaWzd+i4g4eBZS447Mi82gd7PAvlNyJJ9GtxbbVe/A==
   dependencies:
     "@babel/runtime" "^7.0.0"
     bluebird "^3.5.1"
